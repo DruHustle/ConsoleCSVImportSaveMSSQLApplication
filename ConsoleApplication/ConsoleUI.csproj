@@ -81,6 +81,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ConsoleAudit.cs" />
+    <Compile Include="Classes\ConsoleInvoice.cs" />
     <Compile Include="Classes\ReadData.cs" />
     <Compile Include="Classes\DataBase.cs" />
     <Compile Include="Classes\SaveData.cs" />

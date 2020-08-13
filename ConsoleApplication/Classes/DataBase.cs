@@ -11,7 +11,7 @@ namespace ConsoleUI.Classes
     {
         public static void Clear()
         {
-            
+            //Clearing tables before adding new data
             using (var dbContext = new ApplicationDBContext())
             {
                 dbContext.InvoiceHeaders.RemoveRange(dbContext.InvoiceHeaders);

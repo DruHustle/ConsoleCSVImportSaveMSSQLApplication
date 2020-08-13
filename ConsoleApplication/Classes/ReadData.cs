@@ -13,8 +13,7 @@ namespace ConsoleUI.Classes
         public static DataTable Source(string [] lines)
         {
             try
-            {
-                
+            {               
 
                 //Obtaining column headers
                 string headerLine = lines[0];
@@ -33,7 +32,7 @@ namespace ConsoleUI.Classes
                 //Iterating through rows
                 for (int i = 1; i < lines.Length; i++)
                 {
-                    //Creating 
+                    //Creating new row
                     DataRow row = table.NewRow();
 
                     //Obtaining string in cells of the CSV file
@@ -45,16 +44,15 @@ namespace ConsoleUI.Classes
                     {
                         row[headerlabel] = dataWords[wordCounter++].Trim();
                     }
+                    //Add row to table
                     table.Rows.Add(row);
                 }
 
                 return table; 
-
-
             }
             catch (Exception)
             {
-
+                //Throw exeption to calling function
                 throw;
             }
         }

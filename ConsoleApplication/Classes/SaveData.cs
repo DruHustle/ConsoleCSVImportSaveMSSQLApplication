@@ -38,9 +38,9 @@ namespace ConsoleUI.Classes
                             dbContext.SaveChanges();
                       
                         }
-                        invoiceHeaderList.Add(invoiceHeader);    
 
-                        
+                        //A list of all invoiceHeaders
+                        invoiceHeaderList.Add(invoiceHeader);                          
                     }
 
                     foreach (DataRow row in dataTable.Rows)
