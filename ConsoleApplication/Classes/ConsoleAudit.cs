@@ -29,6 +29,7 @@ namespace ConsoleUI.Classes
 
                 Console.WriteLine($"The sum of InvoiceLines.Quantity * InvoiceLines.UnitSellingPriceExVAT is {totalUnit}.");
 
+                //Check if audit passed
                 if (Math.Round(totalUnit, 2) == 21860.71)
                 {
                     Console.WriteLine($"\nAudit Passed!");
